@@ -1,6 +1,6 @@
 image:
-  repository: galaxy/galaxy-k8s
-  tag: 20.01
+  repository: pcm32/galaxy-k8s
+  tag: 20.05_7ddbf2
   pullPolicy: IfNotPresent
 
 webHandlers:
@@ -22,6 +22,9 @@ persistence:
 
 influxdb:
   enabled: false
+
+rabbitmq:
+  enabled: true
 
 postgresql:
   persistence:
